@@ -82,7 +82,33 @@ COMMAND_V2 = {
     'port-delete': utils.import_class(
         'quantumclient.quantum.v2_0.port.DeletePort'),
     'port-update': utils.import_class(
-        'quantumclient.quantum.v2_0.port.UpdatePort'), }
+        'quantumclient.quantum.v2_0.port.UpdatePort'),
+    'router-list': utils.import_class(
+        'quantumclient.quantum.v2_0.router.ListRouter'),
+    'router-show': utils.import_class(
+        'quantumclient.quantum.v2_0.router.ShowRouter'),
+    'router-create': utils.import_class(
+        'quantumclient.quantum.v2_0.router.CreateRouter'),
+    'router-delete': utils.import_class(
+        'quantumclient.quantum.v2_0.router.DeleteRouter'),
+    'router-update': utils.import_class(
+        'quantumclient.quantum.v2_0.router.UpdateRouter'),
+    'router-interface-add': utils.import_class(
+        'quantumclient.quantum.v2_0.router.AddInterfaceRouter'),
+    'floatingip-list': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.ListFloatingIP'),
+    'floatingip-show': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.ShowFloatingIP'),
+    'floatingip-create': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.CreateFloatingIP'),
+    'floatingip-delete': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.DeleteFloatingIP'),
+    'floatingip-associate': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.AssociateFloatingIP'),
+    'floatingip-disassociate': utils.import_class(
+        'quantumclient.quantum.v2_0.floatingip.DisassociateFloatingIP'),
+
+}
 
 COMMANDS = {'2.0': COMMAND_V2}
 
